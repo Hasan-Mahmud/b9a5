@@ -8,4 +8,9 @@
 .font-inter {
     font-family: "Inter", sans-serif;
 }
+
+.bg-img{
+    border-radius: 32px;
+    background-image: url("/images/banner.png");
+}
   

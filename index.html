@@ -220,7 +220,8 @@
 
         <!-- Buy Ticket Section -->
 
-        <section id="paribahan" class="mt-32 w-full h-[1919px] border-t-2 rounded-t-[88px] border-[#1DD100] bg-[#f7f8f8]">
+        <section id="paribahan"
+            class="mt-32 w-full h-[1919px] border-t-2 rounded-t-[88px] border-[#1DD100] bg-[#f7f8f8]">
 
             <div class="px-32 flex flex-col items-center ">
 
@@ -251,7 +252,8 @@
 
                                     <button class="flex gap-1 p-[17px] rounded-xl bg-[#1dd10026] items-center">
                                         <img src="images/seat-green.png" alt="">
-                                        <p class="text-[#1DD100] font-inter text-sm">40 Seats left</p>
+                                        <p class="text-[#1DD100] font-inter text-sm"><span id="seatLeft">40</span> Seats
+                                            left</p>
 
                                     </button>
 
@@ -321,7 +323,7 @@
                 <div class="p-8 flex flex-row h-full gap-8">
 
                     <div class="border-r-2 border-dashed border-[#0307124d]">
-                        <div class="pr-8 flex flex-col w-[674px]">
+                        <div id="seatPlan" class="pr-8 flex flex-col w-[674px]">
                             <h3 class="font-raleway text-2xl font-bold mb-6">Select Your Seat</h3>
 
                             <div class="w-full border-y-2 border-dashed py-5">
@@ -369,13 +371,13 @@
 
                                     <div class="flex gap-7">
 
-                                        <div class="btn btn w-[110px] h-[56px]">
+                                        <div id="a1" class="seat btn btn w-[110px] h-[56px] text-lg text-[#03071280]">
 
-                                            <h5 class="text-lg text-[#03071280]">A1</h5>
+                                            A1
 
                                         </div>
-                                        <div class="btn btn w-[110px] h-[56px]">
-                                            <h5 class="text-lg text-[#03071280]">A2</h5>
+                                        <div id="a2" class="seat btn btn w-[110px] h-[56px] text-lg text-[#03071280]">
+                                            A2
                                         </div>
 
                                     </div>
@@ -386,14 +388,14 @@
 
                                 <div class="flex gap-7">
 
-                                    <div class="btn btn w-[110px] h-[56px]">
+                                    <div id="a3" class="seat btn w-[110px] h-[56px] text-lg text-[#03071280]">
 
-                                        <h5 class="text-lg text-[#03071280]">A3</h5>
+                                        A3
 
                                     </div>
-                                    <div class="btn btn w-[110px] h-[56px]">
+                                    <div id="a4" class="seat btn w-[110px] h-[56px] text-lg text-[#03071280]">
 
-                                        <h5 class="text-lg text-[#03071280]">A4</h5>
+                                        A4
 
                                     </div>
 
@@ -414,13 +416,13 @@
 
                                     <div class="flex gap-7">
 
-                                        <div class="btn btn w-[110px] h-[56px]">
+                                        <div id="b1" class="seat btn btn w-[110px] h-[56px] text-lg text-[#03071280]">
 
-                                            <h5 class="text-lg text-[#03071280]">B1</h5>
+                                            B1
 
                                         </div>
-                                        <div class="btn btn w-[110px] h-[56px]">
-                                            <h5 class="text-lg text-[#03071280]">B2</h5>
+                                        <div id="b2" class="seat btn text-lg text-[#03071280] w-[110px] h-[56px]">
+                                            B2
                                         </div>
 
                                     </div>
@@ -431,14 +433,14 @@
 
                                 <div class="flex gap-7">
 
-                                    <div class="btn btn w-[110px] h-[56px]">
+                                    <div id="b3" class="seat btn w-[110px] h-[56px] text-lg text-[#03071280]">
 
-                                        <h5 class="text-lg text-[#03071280]">B3</h5>
+                                        B3
 
                                     </div>
-                                    <div class="btn btn w-[110px] h-[56px]">
+                                    <div id="b4" class="seat btn  w-[110px] h-[56px] text-lg text-[#03071280]">
 
-                                        <h5 class="text-lg text-[#03071280]">B4</h5>
+                                        B4
 
                                     </div>
 
@@ -458,13 +460,13 @@
 
                                     <div class="flex gap-7">
 
-                                        <div class="btn btn w-[110px] h-[56px]">
+                                        <div id="c1" class="seat btn btn w-[110px] h-[56px] text-lg text-[#03071280]">
 
-                                            <h5 class="text-lg text-[#03071280]">C1</h5>
+                                            C1
 
                                         </div>
-                                        <div class="btn btn w-[110px] h-[56px]">
-                                            <h5 class="text-lg text-[#03071280]">C2</h5>
+                                        <div id="c2" class="seat btn btn w-[110px] h-[56px] text-lg text-[#03071280]">
+                                            C2
                                         </div>
 
                                     </div>
@@ -475,14 +477,14 @@
 
                                 <div class="flex gap-7">
 
-                                    <div class="btn btn w-[110px] h-[56px]">
+                                    <div id="c3" class="seat btn w-[110px] h-[56px] text-lg text-[#03071280]">
 
-                                        <h5 class="text-lg text-[#03071280]">C3</h5>
+                                        C3
 
                                     </div>
-                                    <div class="btn btn w-[110px] h-[56px]">
+                                    <div id="c4" class="seat btn  w-[110px] h-[56px] text-lg text-[#03071280]">
 
-                                        <h5 class="text-lg text-[#03071280]">C4</h5>
+                                        C4
 
                                     </div>
 
@@ -503,13 +505,13 @@
 
                                     <div class="flex gap-7">
 
-                                        <div class="btn btn w-[110px] h-[56px]">
+                                        <div id="d1" class="seat btn w-[110px] h-[56px] text-lg text-[#03071280]">
 
-                                            <h5 class="text-lg text-[#03071280]">D1</h5>
+                                            D1
 
                                         </div>
-                                        <div class="btn btn w-[110px] h-[56px]">
-                                            <h5 class="text-lg text-[#03071280]">D2</h5>
+                                        <div id="d2" class="seat btn w-[110px] h-[56px] text-lg text-[#03071280]">
+                                            D2
                                         </div>
 
                                     </div>
@@ -520,14 +522,14 @@
 
                                 <div class="flex gap-7">
 
-                                    <div class="btn btn w-[110px] h-[56px]">
+                                    <div id="d3" class="seat btn w-[110px] h-[56px] text-lg text-[#03071280]">
 
-                                        <h5 class="text-lg text-[#03071280]">D3</h5>
+                                        D3
 
                                     </div>
-                                    <div class="btn btn w-[110px] h-[56px]">
+                                    <div id="d4" class="seat btn w-[110px] h-[56px] text-lg text-[#03071280]">
 
-                                        <h5 class="text-lg text-[#03071280]">D4</h5>
+                                        D4
 
                                     </div>
 
@@ -548,13 +550,12 @@
 
                                     <div class="flex gap-7">
 
-                                        <div class="btn btn w-[110px] h-[56px]">
-
-                                            <h5 class="text-lg text-[#03071280]">E1</h5>
-
+                                        <div id="e1" class="seat btn btn w-[110px] h-[56px] text-lg text-[#03071280]">
+                                            E1
                                         </div>
-                                        <div class="btn btn w-[110px] h-[56px]">
-                                            <h5 class="text-lg text-[#03071280]">E2</h5>
+
+                                        <div id="e2" class="seat btn btn w-[110px] h-[56px] text-lg text-[#03071280]">
+                                            E2
                                         </div>
 
                                     </div>
@@ -565,14 +566,14 @@
 
                                 <div class="flex gap-7">
 
-                                    <div class="btn btn w-[110px] h-[56px]">
+                                    <div id="e3" class="seat btn btn w-[110px] h-[56px] text-lg text-[#03071280]">
 
-                                        <h5 class="text-lg text-[#03071280]">E3</h5>
+                                        E3
 
                                     </div>
-                                    <div class="btn btn w-[110px] h-[56px]">
+                                    <div id="e4" class="seat btn btn w-[110px] h-[56px] text-lg text-[#03071280]">
 
-                                        <h5 class="text-lg text-[#03071280]">E4</h5>
+                                        E4
 
                                     </div>
 
@@ -594,13 +595,13 @@
 
                                     <div class="flex gap-7">
 
-                                        <div class="btn btn w-[110px] h-[56px]">
+                                        <div id="f1" class="seat btn btn w-[110px] h-[56px] text-lg text-[#03071280]">
 
-                                            <h5 class="text-lg text-[#03071280]">F1</h5>
+                                            F1
 
                                         </div>
-                                        <div class="btn btn w-[110px] h-[56px]">
-                                            <h5 class="text-lg text-[#03071280]">F2</h5>
+                                        <div id="f2" class="seat btn btn w-[110px] h-[56px] text-lg text-[#03071280]">
+                                            F2
                                         </div>
 
                                     </div>
@@ -611,14 +612,14 @@
 
                                 <div class="flex gap-7">
 
-                                    <div class="btn btn w-[110px] h-[56px]">
+                                    <div id="f3" class="seat btn btn w-[110px] h-[56px] text-lg text-[#03071280]">
 
-                                        <h5 class="text-lg text-[#03071280]">F3</h5>
+                                        F3
 
                                     </div>
-                                    <div class="btn btn w-[110px] h-[56px]">
+                                    <div id="f4" class="seat btn btn w-[110px] h-[56px] text-lg text-[#03071280]">
 
-                                        <h5 class="text-lg text-[#03071280]">F4</h5>
+                                        F4
 
                                     </div>
 
@@ -640,13 +641,13 @@
 
                                     <div class="flex gap-7">
 
-                                        <div class="btn btn w-[110px] h-[56px]">
+                                        <div id="g1" class="seat btn btn w-[110px] h-[56px] text-lg text-[#03071280]">
 
-                                            <h5 class="text-lg text-[#03071280]">G1</h5>
+                                            G1
 
                                         </div>
-                                        <div class="btn btn w-[110px] h-[56px]">
-                                            <h5 class="text-lg text-[#03071280]">G2</h5>
+                                        <div id="g2" class="seat btn btn w-[110px] h-[56px] text-lg text-[#03071280]">
+                                            G2
                                         </div>
 
                                     </div>
@@ -657,14 +658,14 @@
 
                                 <div class="flex gap-7">
 
-                                    <div class="btn btn w-[110px] h-[56px]">
+                                    <div id="g3" class="seat btn btn w-[110px] h-[56px] text-lg text-[#03071280]">
 
-                                        <h5 class="text-lg text-[#03071280]">G3</h5>
+                                        G3
 
                                     </div>
-                                    <div class="btn btn w-[110px] h-[56px]">
+                                    <div id="g4" class="seat btn btn w-[110px] h-[56px] text-lg text-[#03071280]">
 
-                                        <h5 class="text-lg text-[#03071280]">G4</h5>
+                                        G4
 
                                     </div>
 
@@ -686,13 +687,13 @@
 
                                     <div class="flex gap-7">
 
-                                        <div class="btn btn w-[110px] h-[56px]">
+                                        <div id="h1" class="seat btn btn w-[110px] h-[56px] text-lg text-[#03071280]">
 
-                                            <h5 class="text-lg text-[#03071280]">H1</h5>
+                                            H1
 
                                         </div>
-                                        <div class="btn btn w-[110px] h-[56px]">
-                                            <h5 class="text-lg text-[#03071280]">H2</h5>
+                                        <div id="h2" class="seat btn btn w-[110px] h-[56px] text-lg text-[#03071280]">
+                                            H2
                                         </div>
 
                                     </div>
@@ -703,14 +704,14 @@
 
                                 <div class="flex gap-7">
 
-                                    <div class="btn btn w-[110px] h-[56px]">
+                                    <div id="h3" class="seat btn btn w-[110px] h-[56px] text-lg text-[#03071280]">
 
-                                        <h5 class="text-lg text-[#03071280]">H3</h5>
+                                        H3
 
                                     </div>
-                                    <div class="btn btn w-[110px] h-[56px]">
+                                    <div id="h4" class="seat btn btn w-[110px] h-[56px] text-lg text-[#03071280]">
 
-                                        <h5 class="text-lg text-[#03071280]">H4</h5>
+                                        H4
 
                                     </div>
 
@@ -732,13 +733,13 @@
 
                                     <div class="flex gap-7">
 
-                                        <div class="btn btn w-[110px] h-[56px]">
+                                        <div id="i1" class="seat btn btn w-[110px] h-[56px] text-lg text-[#03071280]">
 
-                                            <h5 class="text-lg text-[#03071280]">I1</h5>
+                                            I1
 
                                         </div>
-                                        <div class="btn btn w-[110px] h-[56px]">
-                                            <h5 class="text-lg text-[#03071280]">I2</h5>
+                                        <div id="i2" class="seat btn btn w-[110px] h-[56px] text-lg text-[#03071280]">
+                                            I2
                                         </div>
 
                                     </div>
@@ -749,14 +750,14 @@
 
                                 <div class="flex gap-7">
 
-                                    <div class="btn btn w-[110px] h-[56px]">
+                                    <div id="i3" class="seat btn btn w-[110px] h-[56px] text-lg text-[#03071280]">
 
-                                        <h5 class="text-lg text-[#03071280]">I3</h5>
+                                        I3
 
                                     </div>
-                                    <div class="btn btn w-[110px] h-[56px]">
+                                    <div id="i4" class="seat btn btn w-[110px] h-[56px] text-lg text-[#03071280]">
 
-                                        <h5 class="text-lg text-[#03071280]">I4</h5>
+                                        I4
 
                                     </div>
 
@@ -778,13 +779,13 @@
 
                                     <div class="flex gap-7">
 
-                                        <div class="btn btn w-[110px] h-[56px]">
+                                        <div id="j1" class="seat btn btn w-[110px] h-[56px] text-lg text-[#03071280]">
 
-                                            <h5 class="text-lg text-[#03071280]">J1</h5>
+                                            J1
 
                                         </div>
-                                        <div class="btn btn w-[110px] h-[56px]">
-                                            <h5 class="text-lg text-[#03071280]">J2</h5>
+                                        <div id="j2" class="seat btn btn w-[110px] h-[56px] text-lg text-[#03071280]">
+                                            J2
                                         </div>
 
                                     </div>
@@ -795,14 +796,14 @@
 
                                 <div class="flex gap-7">
 
-                                    <div class="btn btn w-[110px] h-[56px]">
+                                    <div id="j3" class="seat btn btn w-[110px] h-[56px] text-lg text-[#03071280]">
 
-                                        <h5 class="text-lg text-[#03071280]">J3</h5>
+                                        J3
 
                                     </div>
-                                    <div class="btn btn w-[110px] h-[56px]">
+                                    <div id="j4" class="seat btn btn w-[110px] h-[56px] text-lg text-[#03071280]">
 
-                                        <h5 class="text-lg text-[#03071280]">J4</h5>
+                                        J4
 
                                     </div>
 
@@ -820,32 +821,49 @@
                             <h3 class="font-raleway text-2xl font-bold mb-6 ">Select Your Seat</h3>
                         </div>
 
-                        <div class="h-[335px] w-[433px] bg-[#f7f8f8] mt-8 rounded-lg p-8 flex flex-col">
+                        <div class="h-[400px] w-[433px] bg-[#f7f8f8] mt-8 rounded-lg p-8 flex flex-col">
                             <div class="flex flex-row justify-between border-b-2 border-dashed py-2 border-b-[1px]">
-                                <h4 class="font-inter text-lg text-black font-normal">Seat</h4>
+                                <h4 class="font-inter text-lg text-black font-normal relative">Seat
+                                    <span id="seatSelected" class="relative -top-1 ml-1 text-xs 
+                                    text-white px-1 py-[1px] rounded"></span></h4>
                                 <h4 class="font-inter text-lg text-black font-normal">Class</h4>
                                 <h4 class="font-inter text-lg text-black font-normal">price</h4>
                             </div>
                             <div class="flex flex-row justify-between py-2">
-                                <p class="font-inter font-normal text-base text-[#03071299]">nill</p>
-                                <p class="font-inter font-normal text-base text-[#03071299]">nill</p>
-                                <p class="font-inter font-normal text-base text-[#03071299]">nill</p>
+                                <p id="seat1" class="font-inter font-normal text-base text-[#03071299]"></p>
+                                <p id="seatType1" class="font-inter font-normal text-base text-[#03071299]"></p>
+                                <p id="unitPrice1" class="font-inter font-normal text-base text-[#03071299]"></p>
                             </div>
                             <div class="flex flex-row justify-between py-2">
-                                <p class="font-inter font-normal text-base text-[#03071299]">nill</p>
-                                <p class="font-inter font-normal text-base text-[#03071299]">nill</p>
-                                <p class="font-inter font-normal text-base text-[#03071299]">nill</p>
+                                <p id="seat2" class="font-inter font-normal text-base text-[#03071299]"></p>
+                                <p id="seatType2"  class="font-inter font-normal text-base text-[#03071299]"></p>
+                                <p id="unitPrice2" class="font-inter font-normal text-base text-[#03071299]"></p>
+                            </div>
+                             <div class="flex flex-row justify-between py-2">
+                                <p id="seat3" class="font-inter font-normal text-base text-[#03071299]"></p>
+                                <p id="seatType3" class="font-inter font-normal text-base text-[#03071299]"></p>
+                                <p id="unitPrice2" class="font-inter font-normal text-base text-[#03071299]"></p>
+                            </div>
+                             <div class="flex flex-row justify-between py-2">
+                                <p id="seat4" class="font-inter font-normal text-base text-[#03071299]"></p>
+                                <p id="seatType4" class="font-inter font-normal text-base text-[#03071299]"></p>
+                                <p id="unitPrice4" class="font-inter font-normal text-base text-[#03071299]"></p>
                             </div>
                             <hr class="w-369px border bg-[#03071233]">
                             <div class="flex flex-row justify-between">
                                 <h5 class="font-inter font-medium text-base font-[#030712]">Total Price</h5>
-                                <h5 class="font-inter font-medium text-base font-[#030712]">nill</h5>
+                                <h5 class="font-inter font-medium text-base font-[#030712]">0</h5>
+                            </div>
+
+                            <div class="flex flex-row justify-between">
+                                <h5 id="discount" class="font-inter font-medium text-base font-[#030712]"></h5>
+                                <h5 id="discountPrice" class="font-inter font-medium text-base font-[#030712]"></h5>
                             </div>
 
                             <div
                                 class="w-[369px] h-[65px] bg-[#ffffff] mt-3 rounded-xl p-2 flex flex-row justify-between items-center">
-                                <p class="text-sm font-normal text-[#03071266]">Have any coupon?</p>
-                                <button class="btn w-[80px] h-[15px] rounded-lg bg-[#1dd100] text-white">Apply</button>
+                                <input id="inputCoupon" class="input text-sm font-normal text-[#03071266] pointer-events-none" placeholder="Have any coupon?" >
+                                <button id="applyCoupon" class="btn w-[80px] h-[15px] rounded-lg text-white pointer-events-none">Apply</button>
 
                             </div>
 
@@ -868,7 +886,7 @@
                         <input type="text" class="input w-[433px] border rounded-xl border-[#0307121a] mt-4"
                             placeholder="Enter Your Email Id">
                         <input type="button" class="btn mt-6 w-[433px] h-[65px] rounded-2xl text-xl text-white 
-                        font-[Raleway] bg-[#1dd100]" value="Next">
+                        font-[Raleway] pointer-events-none" value="Next">
 
                         <div class="flex flex-row justify-between px-10 mt-6 text-base text-[#03071299] underline">
                             <p>Term and Condition</p>
@@ -965,6 +983,7 @@
 
     </main>
     <script src="js/pticket.js"></script>
+    <script src="js/utility.js"></script>
 
 </body>
 

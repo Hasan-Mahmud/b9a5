@@ -26,6 +26,11 @@ document.querySelectorAll(".seat").forEach(button => {
             console.log(count);
             seatAvailable(count);
             seatSelectedNum(count);
+            const sen = "seat" + count;
+            const seatN = getSeatNum(id);
+            console.log(seatN);
+            setSeatDetails(count,id);
+            totalPrice(count);
 
             if(count >= 4){
                 document.querySelectorAll(".seat:not(:disabled)").forEach(button=>{
@@ -33,12 +38,46 @@ document.querySelectorAll(".seat").forEach(button => {
                 });
             }
 
-            if(count==1){
+            if(count==4){
+                enableElementById('inputCoupon');
+                enableElementById('applyCoupon');
+                setBgColor('applyCoupon');
+                const couponCode = document.getElementById('inputCoupon');
                 
+                const coupon = document.getElementById('applyCoupon');
+                coupon.addEventListener("click",function(e) {
+                    const code = couponCode.value;
+                    console.log(code);
+                    if(code == "NEW15"){
+                        const totalTicketPrice = totalPrice(count);
+                        const totalDiscount = (totalTicketPrice / 100) * 15;
+                        const discount = document.getElementById('discount');
+                        const discountPrice = document.getElementById('discountPrice');
+                        discount.innerText = "Discount";
+                        discountPrice.innerText = totalDiscount;
+                        hideElementById('couponId');
+                        const grandTotal = document.getElementById("granTotal");
+                        grandTotal.innerText = totalTicketPrice - totalDiscount;
+                    }if(code == "Couple 20"){
+                        const totalTicketPrice = totalPrice(count);
+                        const totalDiscount = (totalTicketPrice / 100) * 20;
+                        const discount = document.getElementById('discount');
+                        const discountPrice = document.getElementById('discountPrice');
+                        discount.innerText = "Discount";
+                        discountPrice.innerText = totalDiscount;
+                        hideElementById('couponId');
+                        const grandTotal = document.getElementById("granTotal");
+                        grandTotal.innerText = totalTicketPrice - totalDiscount;
+                    }
+                });
             }
+
+
+            
 
         } else {
             console.log("eventListener not working")
         }
     });
 }); 
+

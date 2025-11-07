@@ -5,6 +5,16 @@ function setBgColor(elementId){
 
 }
 
+function hideElementById(elementId) {
+    const element = document.getElementById(elementId);
+    element.classList.add('hidden')
+}
+
+function enableElementById(elementId) {
+    const element = document.getElementById(elementId);
+    element.classList.remove('pointer-events-none');
+}
+
 function disableOnclick(elementId){
     const element = document.getElementById(elementId);
     element.disabled = true;
@@ -42,7 +52,28 @@ function seatSelectedNum(count){
 }
 
 function getSeatNum(elementId){
-  const seatId = document.getElementById(elementId);
+  const seatId = document.getElementById(elementId);  
   const seatNum = seatId.innerText;
-
+  return seatNum;
 }
+
+function setSeatDetails(count, elementId){
+ const seatId = "seat" + count;
+ const seatType = "seatType" + count;
+ const seatPrice = "unitPrice" + count;
+ const seat = document.getElementById(seatId);
+ seat.innerText = getSeatNum(elementId);
+ const type = document.getElementById(seatType);
+ type.innerText = "Economoy";
+ console.log(seatPrice);
+ const price = document.getElementById(seatPrice);
+ price.innerText = "550";
+}
+
+function totalPrice(count){
+  const price = 550 * count;
+  const totalPriceId = document.getElementById("totalPrice");
+  totalPriceId.innerText = price;
+  return price;
+}
+

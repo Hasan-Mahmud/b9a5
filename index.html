@@ -842,7 +842,7 @@
                              <div class="flex flex-row justify-between py-2">
                                 <p id="seat3" class="font-inter font-normal text-base text-[#03071299]"></p>
                                 <p id="seatType3" class="font-inter font-normal text-base text-[#03071299]"></p>
-                                <p id="unitPrice2" class="font-inter font-normal text-base text-[#03071299]"></p>
+                                <p id="unitPrice3" class="font-inter font-normal text-base text-[#03071299]"></p>
                             </div>
                              <div class="flex flex-row justify-between py-2">
                                 <p id="seat4" class="font-inter font-normal text-base text-[#03071299]"></p>
@@ -852,7 +852,7 @@
                             <hr class="w-369px border bg-[#03071233]">
                             <div class="flex flex-row justify-between">
                                 <h5 class="font-inter font-medium text-base font-[#030712]">Total Price</h5>
-                                <h5 class="font-inter font-medium text-base font-[#030712]">0</h5>
+                                <h5 id="totalPrice" class="font-inter font-medium text-base font-[#030712]">0</h5>
                             </div>
 
                             <div class="flex flex-row justify-between">
@@ -860,16 +860,15 @@
                                 <h5 id="discountPrice" class="font-inter font-medium text-base font-[#030712]"></h5>
                             </div>
 
-                            <div
-                                class="w-[369px] h-[65px] bg-[#ffffff] mt-3 rounded-xl p-2 flex flex-row justify-between items-center">
+                            <div id="couponId" class="w-[369px] h-[65px] bg-[#ffffff] mt-3 rounded-xl p-2 flex flex-row justify-between items-center">
                                 <input id="inputCoupon" class="input text-sm font-normal text-[#03071266] pointer-events-none" placeholder="Have any coupon?" >
                                 <button id="applyCoupon" class="btn w-[80px] h-[15px] rounded-lg text-white pointer-events-none">Apply</button>
 
                             </div>
 
                             <div class="flex flex-row justify-between mt-4">
-                                <h5 class="font-inter font-medium text-base font-[#030712]">Grand Total</h5>
-                                <h5 class="font-inter font-medium text-base font-[#030712]">nill</h5>
+                                <h5  class="font-inter font-medium text-base font-[#030712]">Grand Total</h5>
+                                <h5 id="granTotal" class="font-inter font-medium text-base font-[#030712]"></h5>
                             </div>
 
                         </div>
@@ -879,7 +878,7 @@
                             placeholder="Enter Your Name">
 
                         <h4 class="mt-6">Phone Number*</h4>
-                        <input type="text" class="input w-[433px] border rounded-xl border-[#0307121a] mt-4"
+                        <input type="number" class="input w-[433px] border rounded-xl border-[#0307121a] mt-4"
                             placeholder="Enter Your Phone Number">
 
                         <h4 class="mt-6">Email Id*</h4>

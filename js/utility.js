@@ -5,14 +5,30 @@ function setBgColor(elementId){
 
 }
 
+function deleteBgColor(elementId){
+  const element = document.getElementById(elementId);
+    element.classList.remove('bg-[#1DD100]');
+
+}
+
 function hideElementById(elementId) {
     const element = document.getElementById(elementId);
-    element.classList.add('hidden')
+    element.classList.add('hidden');
+}
+
+function showElementById(elementId){
+  const element = document.getElementById(elementId);
+    element.classList.remove('hidden');
 }
 
 function enableElementById(elementId) {
     const element = document.getElementById(elementId);
     element.classList.remove('pointer-events-none');
+}
+
+function disableElementById(elementId){
+  const element = document.getElementById(elementId);
+    element.classList.add('pointer-events-none');
 }
 
 function disableOnclick(elementId){
@@ -76,4 +92,5 @@ function totalPrice(count){
   totalPriceId.innerText = price;
   return price;
 }
+
 
